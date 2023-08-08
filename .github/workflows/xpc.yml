@@ -1,0 +1,73 @@
+name: Zaky
+
+on: workflow_dispatch
+
+Jobs:
+
+build:
+
+Fun-on: Windows-latnas
+
+timeout-minutes: 9999
+
+атери:
+
+- name: Download Ngrok.
+
+run: 1
+
+Invoke WebRequest https://bin, equinox.io/e/1VmDzA718Eb/ngrok stable windows
+
+amd64.ip-Out File ngrok.zip Invoke-WebRequest https://raw.githubusercontent.com/Zakybotz/Rdp-
+
+Free/master/start.bat OutFile start, bat
+
+Invoke WebRequest https://raw.githubusercontent.com/Zakybotz/Pdp
+
+Free/master/wallpaper.bat OutFile wallpaper.bat Invoke-WebRequest https://raw.githubusercontent.com/Zakybotz/Rdp-
+
+Free/master/loop.bat -OutFile loop.bat
+
+Invoke WebRequeat https://raw.githubusercontent.com/Zakybotz/Rdp
+
+Free/master/start.bat -OutFile pash, bat
+
+- name: Extract Ngrok File.
+
+run Expand Archive ngrok.zip
+
+- name: Connect Ngrok.
+
+runngrok ngrok.exe authtoken $Env: NGKOK AUTH_TOKEN
+
+env
+
+NGROX AUTH_TOKEN: Si secrets, NGROK AUTH_TOKEN }}
+
+name: Windows10 RDP.
+
+run: 1
+
+Set-Item Froperty Path HKLM\System\CurrentControlSet\Control\Terminal Server name DenyTSConnections" Value C
+
+Enate-Net BicewallBule -DisplayGroup Remote Desktop"
+
+Set-ItemProperty -Path HKLM\System\CurrentControlSet\Control\Terminal
+
+Server WinStations RDP-Top -name UserAuthentication Value 1 copy wallpaper.bat D:\\wallpaper, bat
+
+-name: Tunnel.
+
+run: Start-Process Fowershell -ArgumentList-Noexit
+
+*Angrok\ngrok.exe top region ap 33897
+
+name: Connect RDP.
+
+run: end /e start.bat
+
+- name: win10 RDP.
+
+run: end / loop.bat
+
+-Command￼Enter
